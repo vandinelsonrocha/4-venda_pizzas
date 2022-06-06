@@ -9,13 +9,15 @@ let vendaMista = 0.0;
 let vendaCalabresa = 0.0;
 
 //Variáveis de manipulação do DOM para os botôes:
-let btnVendas = document.getElementById("vendas");
-let btnEstorno = document.getElementById("estorno");
+window.onload=function()  {
+  let btnVendas = document.getElementById("vendas");
+  let btnEstorno = document.getElementById("estorno");
 
 /*Eventos para os botôes de clique
 false -> pq não quero outro elemento do código HTML, apenas os botões e nada mais além disso.*/
-btnVendas.addEventListener("click", venda, false);
-btnEstorno.addEventListener("click", estorno, false);
+  btnVendas.addEventListener("click", venda, false);
+  btnEstorno.addEventListener("click", estorno, false);
+}
 
 //As funções recebem um evento:
 function venda(e) {
@@ -32,7 +34,7 @@ function venda(e) {
     vendaMista += 30.0;
     document.getElementById("resultadoMista").innerHTML = somaMista;
     document.getElementById("vendasMista").innerHTML = vendaMista.toFixed(2);
-  } else if (document.getElementById("calabresaa").checked) {
+  } else if (document.getElementById("calabresa").checked) {
     somaCalabresa += 1;
     vendaCalabresa += 35.0;
     document.getElementById("resultadoCalabresa").innerHTML = somaCalabresa;
@@ -63,7 +65,7 @@ function estorno(e) {
     }
     document.getElementById("resultadoMista").innerHTML = somaMista;
     document.getElementById("vendasMista").innerHTML = vendaMista.toFixed(2);
-  } else if (document.getElementById("calabresaa").checked) {
+  } else if (document.getElementById("calabresa").checked) {
     somaCalabresa -= 1;
     vendaCalabresa -= 35.0;
     if (somaCalabresa < 0) {
