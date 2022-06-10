@@ -1,9 +1,9 @@
-body  {
+body {
     margin: auto;
     width: 60%;
 }
 
-header  {
+header {
     display: flex;
     justify-content: center;
     background-color: blue;
@@ -11,11 +11,11 @@ header  {
     text-align: center;
 }
 
-header li  {
+header li {
     list-style: none;
 }
 
-section form ul li  {
+section form ul li {
     list-style: none;
     font-size: 22px;
 }
@@ -24,19 +24,23 @@ section label {
     font-size: 22px;
 }
 
-section  {
-    margin-top: 1%; /*espaçamento vertical entre as section*/
+section {
+    margin-top: 1%;
+    /*espaçamento vertical entre as section*/
     display: flex;
     justify-content: center;
     font-size: medium;
 }
 
-section button  {
+section button {
     margin: 5px;
     font-size: 20px;
 }
 
-table, th, td  { /*usa-se vírgulas porque essas tags fazem parte da mesma estrutura*/
+table,
+th,
+td {
+    /*usa-se vírgulas porque essas tags fazem parte da mesma estrutura*/
     border: 2px solid black;
     border-collapse: collapse;
     border-radius: 5px;
